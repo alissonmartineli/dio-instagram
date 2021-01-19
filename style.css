@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 800px;
+}
+
+.col {
+    margin: 2rem 0;
+    width: 50%;
+}
+
+.col:nth-child(1) {
+    margin-right: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    padding: 1.8rem 0;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    height: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.form {
+    width: 100%;
+    padding: 0 3rem;
+}
+
+.input {
+    width: 100%;
+    background-color: #fafafa;
+    padding: 0.75rem;
+    border: 1px solid lightgray;
+    margin-bottom: 0.5rem;
+}
+
+.btn-login {
+    width: 100%;
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border-color: transparent;
+    margin-top: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-signup {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.btn-facebook {
+    color: #385185;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.btn-facebook::before {
+    content: '';
+    background-image: url('./img/facebook.png');
+    background-position: center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+}
+
+.btn-passwd {
+    font-size: 12px;
+}
+
+.btn-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.or {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: #999;
+}
+
+.or .separator {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #dbdbdb;
+    height: 1px;
+    position: relative;
+    top: 0.45em;
+    margin: 0 1rem;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.get-app .get-app-text {
+    margin-bottom: 1.5rem;
+}
+
+.get-app .download {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.get-app .download .btn-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.get-app .download .btn-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+@media (max-width: 875px) {
+    .col {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .col:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .card {
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
